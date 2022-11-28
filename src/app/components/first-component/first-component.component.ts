@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 
 @Component({
   selector: 'app-first-component',
@@ -7,33 +7,9 @@ import { Component } from '@angular/core';
 })
 export class FirstComponentComponent {
 
-  variable = 1
+  @Output() name: string[] = ['Pedro', 'Henrique']
 
-  ngOnChanges(): void {
-    console.log('ngOnChanges');
-  }
+  show = true
 
-  ngOnInit(): void {
-    console.log('ngOnInit');
-  }
-
-  ngDoCheck(): void {
-    console.log('ngDoCheck');
-  }
-
-  ngAfterContentInit(): void {
-    console.log('ngAfterContentInit');
-  }
-
-  ngAfterContentChecked(): void {
-    console.log('ngAfterContentChecked');
-  }
-
-  ngAfterViewChecked(): void {
-    console.log('ngAfterViewChecked');
-  }
-
-  varChange() {
-    this.variable++
-  }
+  
 }
