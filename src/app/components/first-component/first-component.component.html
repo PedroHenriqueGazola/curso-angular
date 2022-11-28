@@ -1,2 +1,7 @@
-<app-second-component *ngIf="show" [nameInput] = 'name'></app-second-component>
+<app-second-component *ngIf="show; else elseTemplate" [nameInput] = 'name'></app-second-component>
+
 <button (click) = "show = !show">Destruir</button>
+
+<ng-template #elseTemplate> 
+    <p>Gazola</p>
+</ng-template>
