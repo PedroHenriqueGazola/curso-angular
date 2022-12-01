@@ -9,6 +9,8 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { PipeTwdbComponent } from './components/pipe-twdb/pipe-twdb.component';
 import { FormsModule } from '@angular/forms';
 import { ComponentServiceComponent } from './components/component-service/component-service.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,14 @@ import { ComponentServiceComponent } from './components/component-service/compon
     EventsComponent,
     ListRenderComponent,
     PipeTwdbComponent,
-    ComponentServiceComponent
+    ComponentServiceComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
