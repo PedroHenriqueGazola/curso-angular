@@ -8,6 +8,7 @@ import { EventsComponent } from './components/events/events.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipeTwdbComponent } from './components/pipe-twdb/pipe-twdb.component';
 import { FormsModule } from '@angular/forms';
+import { ComponentServiceComponent } from './components/component-service/component-service.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     SecondComponentComponent,
     EventsComponent,
     ListRenderComponent,
-    PipeTwdbComponent
+    PipeTwdbComponent,
+    ComponentServiceComponent
   ],
   imports: [
     BrowserModule,
